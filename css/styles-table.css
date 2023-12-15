@@ -1,0 +1,49 @@
+body{
+   font-family: 'LBosque', cursive;
+    background-image: url('../imagenes/fondo-inicio.jpg');
+    background-size: 100%;
+}
+#listado{
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color:white;
+    margin: 20px;
+}
+tr,th,td{
+    background-color: chocolate;
+    border: solid 2px white;
+    padding: 10px;
+    transition: 1s;
+    box-shadow: 0 10px 25px black;
+}
+td:hover{
+    background-color: rgb(159, 77, 19); 
+    transform: scale(1.1);
+}
+h1{
+    text-align: center;
+    color: chocolate;
+    font-size: 80px;
+}
+.salida{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#salir{
+    background-color: rgb(226, 85, 85);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px;
+}
+#salir:hover{
+    background-color: red;
+}

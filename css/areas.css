@@ -1,0 +1,57 @@
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8,auto);
+    grid-template-areas: "sound header header time score"
+                         "game game game game animals"
+                         "game game game game animals"
+                         "game game game game animals"
+                         "game game game game animals"
+                         "game game game game animals"
+                         "game game game game animals"
+                         "footer footer footer footer footer"
+}
+
+.contenedor > div,
+.contenedor .sound,
+.contenedor .header,
+.contenedor .time,
+.contenedor .score,
+.contenedor .game,
+.contenedor .animals,
+.contenedor .footer{
+    padding: 10px;
+}
+
+.contenedor .header{
+    grid-area: header;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor .sound{
+    grid-area: sound;
+}
+
+.contenedor .time{
+    grid-area: time;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenedor .score{
+    grid-area: score;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenedor .game{
+   grid-area: game;
+}
+.contenedor .animals{
+    grid-area: animals;
+}
+.contenedor .footer{
+    grid-area: footer;
+}

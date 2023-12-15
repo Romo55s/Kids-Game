@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/styles-game.css">
+    <link rel="stylesheet" href="../css/areas.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../imagenes/favicon-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../imagenes/favicon-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../imagenes/favicon-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../imagenes/favicon-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../imagenes/favicon-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../imagenes/favicon-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../imagenes/favicon-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../imagenes/favicon-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imagenes/favicon-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../imagenes/favicon-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../imagenes/favicon-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/favicon-icon/favicon-16x16.png">
+    <link rel="manifest" href="../imagenes/favicon-icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Juego</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="sound">
+            <button id="play"><img id="audio" src="../imagenes/play.svg" alt=""></button>
+            <button id="paused"><img id="audio" src="../imagenes/paused.svg" alt=""></button>
+        </div>
+        <div class="header">
+            <h2>Arrastra el animal a su nombre</h2>
+
+        </div>
+        <div class="time">
+            <p id="timer">Tiempo: <span id="timer-value">0</span></p>
+            <p id="score">Puntaje: <span id="score-value"> 0 </span></p>
+        </div>
+        <div class="score">
+
+            <button id="end-button">Terminar</button>
+
+            <button id="quit-button">Salir</button>
+        </div>
+        <main class="game">
+            <div class="draggable-elements">
+
+            </div>
+        </main>
+        <div class="animals">
+            <div class="droppable-elements">
+
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="wrong"> </p>
+        </footer>
+    </div>
+
+
+    <script src="../js/game.js"></script>
+
+</body>
+
+</html>

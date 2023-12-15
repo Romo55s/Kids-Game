@@ -1,0 +1,367 @@
+body {
+    font-family: 'LBosque', cursive;
+    background-image: url('../imagenes/fondo-inicio.jpg');
+    background-size: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 64, 43);
+}
+
+.buttons-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#title,
+#subtitle {
+    color: white;
+}
+
+
+.buttons-tree {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-text {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #0077c2;
+    box-shadow: 0 0 5px #0077c2;
+}
+
+h1 {
+    padding: 20px 10px;
+    margin-top: 0;
+}
+
+
+#game-screen,
+#congrats-screen {
+    display: block;
+}
+
+#quit-button,
+#quit-button-2 {
+    background-color: rgb(226, 85, 85);
+    ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px;
+}
+
+#quit-button:hover,
+#quit-button-2:hover {
+    background-color: red
+}
+
+#start-button,
+#restart-button,
+#login-button,
+#Return-init {
+    width: 200px;
+}
+
+#restart-button {
+    background-color: rgb(12, 131, 12);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: rgb(16, 173, 16);
+}
+
+
+#start-button,
+#end-button,
+#login-button,
+#Return-init {
+    background-color: #0077c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#start-button:hover,
+#end-button:hover,
+#login-button:hover,
+#Return-init {
+    background-color: #005fa8;
+}
+
+#score,
+#timer {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #0077c2;
+}
+
+#congrats-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-image: url("../imagenes/fondo-inicio.jpg");
+    color: chocolate;
+    font-family: 'LBosque', cursive;
+}
+
+.congrastImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-left: 10px;
+}
+
+#congrats-screen h1 {
+    font-size: 4rem;
+    color: chocolate;
+}
+
+#congrats-screen p {
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+#congrats-score,
+#congrats-time {
+    font-weight: bold;
+    color: white;
+}
+
+/* Modales */
+/* Estilos para el botón que abre el modal */
+/* Modal Login*/
+.modal-login {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-login .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    max-height: 80%;
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Estilos para los botones del modal */
+.modal-login .buttons-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón de cerrar el modal */
+.modal-login .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-login .close:hover,
+.modal-login .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Registro*/
+.modal-start {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-start .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    max-height: 80%;
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+
+
+/* Estilos para los botones del modal */
+.modal-start .buttons-tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#tabla-score {
+    background-color: rgb(8, 97, 16);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px;
+}
+
+#tabla-score:hover {
+    background-color: rgb(13, 126, 23);
+}
+
+/* Estilos para el botón de cerrar el modal */
+.modal-start .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-start .close:hover,
+.modal-start .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'LBosque';
+    src: url('../recursos/LetraBosque.ttf');
+}
+
+/* Index */
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+#btn-main , #regresar{
+    padding: 20px;
+    font-family: 'LBosque';
+    font-weight: bold;
+    font-size: 24px;
+    background-color: chocolate;
+    color: #F2FFF2;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px #8B4513;
+}
+
+#btn-main:hover , #regresar:hover{
+    background-color: #8B4513;
+    color: #F2FFF2;
+    box-shadow: none;
+}
+
+#btn-main:focus {
+    outline: none;
+}
+
+#imgSound {
+    cursor: pointer;
+    width: 2%;
+    height: 2%;
+    background-color: rgb(22, 53, 5);
+    border-radius: 5px;
+    transition: transform 0.3s ease-out;
+}
+
+#imgSound:hover {
+    background-color: rgb(43, 105, 9);
+    transform: scale(1.2);
+}
+
+#title-main {
+    font-size: 72px;
+    font-family: 'LBosque';
+    font-weight: bold;
+    color: chocolate;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.container-regresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
